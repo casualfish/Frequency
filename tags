@@ -1,0 +1,160 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Assemble	SampleProducer.cpp	/^int SampleProducer::Assemble()$/;"	f	class:SampleProducer	signature:()
+Assemble	SampleProducer.h	/^        int Assemble();$/;"	p	class:SampleProducer	access:private	signature:()
+CFLAGS	Makefile	/^CFLAGS=-c -Wall `pkg-config --cflags $(required_library)` $/;"	m
+ComputeSamples	SoundTransformer.cpp	/^int SoundTransformer::ComputeSamples(short *soundData)$/;"	f	class:SoundTransformer	signature:(short *soundData)
+ComputeSamples	SoundTransformer.h	/^        int ComputeSamples(short *soundData); $/;"	p	class:SoundTransformer	access:public	signature:(short *soundData)
+DELETE_S	SoundTransformer.cpp	8;"	d	file:
+DataArrives	SampleProducer.cpp	/^gboolean SampleProducer::DataArrives(GstPad *pad, GstBuffer *buffer, gpointer data)$/;"	f	class:SampleProducer	signature:(GstPad *pad, GstBuffer *buffer, gpointer data)
+DataArrives	SampleProducer.h	/^        static gboolean DataArrives(GstPad *pad, GstBuffer *buffer, $/;"	p	class:SampleProducer	access:private	signature:(GstPad *pad, GstBuffer *buffer, gpointer data)
+FFT	SoundTransformer.cpp	/^int SoundTransformer::FFT(double *fr,int n,int flag)$/;"	f	class:SoundTransformer	signature:(double *fr,int n,int flag)
+FFT	SoundTransformer.h	/^        int FFT(double *fr,int n,int flag);$/;"	p	class:SoundTransformer	access:private	signature:(double *fr,int n,int flag)
+FrequencyDisplay	FrequencyDisplay.cpp	/^FrequencyDisplay::FrequencyDisplay(SoundTransformer& transformer)$/;"	f	class:FrequencyDisplay	signature:(SoundTransformer& transformer)
+FrequencyDisplay	FrequencyDisplay.h	/^        FrequencyDisplay(SoundTransformer& transformer);$/;"	p	class:FrequencyDisplay	access:public	signature:(SoundTransformer& transformer)
+FrequencyDisplay	FrequencyDisplay.h	/^class FrequencyDisplay$/;"	c
+FrequencyDisplay::FrequencyDisplay	FrequencyDisplay.cpp	/^FrequencyDisplay::FrequencyDisplay(SoundTransformer& transformer)$/;"	f	class:FrequencyDisplay	signature:(SoundTransformer& transformer)
+FrequencyDisplay::FrequencyDisplay	FrequencyDisplay.h	/^        FrequencyDisplay(SoundTransformer& transformer);$/;"	p	class:FrequencyDisplay	access:public	signature:(SoundTransformer& transformer)
+FrequencyDisplay::OnTimer	FrequencyDisplay.cpp	/^gboolean FrequencyDisplay::OnTimer(TimerData *data)$/;"	f	class:FrequencyDisplay	signature:(TimerData *data)
+FrequencyDisplay::OnTimer	FrequencyDisplay.h	/^        static gboolean OnTimer(TimerData *data);$/;"	p	class:FrequencyDisplay	access:private	signature:(TimerData *data)
+FrequencyDisplay::Show	FrequencyDisplay.cpp	/^void FrequencyDisplay::Show()$/;"	f	class:FrequencyDisplay	signature:()
+FrequencyDisplay::Show	FrequencyDisplay.h	/^        void Show();$/;"	p	class:FrequencyDisplay	access:public	signature:()
+FrequencyDisplay::m_Data	FrequencyDisplay.h	/^        TimerData m_Data;$/;"	m	class:FrequencyDisplay	access:private
+FrequencyDisplay::~FrequencyDisplay	FrequencyDisplay.cpp	/^FrequencyDisplay::~FrequencyDisplay()$/;"	f	class:FrequencyDisplay	signature:()
+FrequencyDisplay::~FrequencyDisplay	FrequencyDisplay.h	/^        virtual ~FrequencyDisplay();$/;"	p	class:FrequencyDisplay	access:public	signature:()
+GetAverageFrequency	SoundTransformer.h	/^        double *GetAverageFrequency();$/;"	p	class:SoundTransformer	access:public	signature:()
+GetAverageFrequency	SoundTransformer.h	/^inline double *SoundTransformer::GetAverageFrequency()$/;"	f	class:SoundTransformer	signature:()
+GetNbMaxSamples	SoundTransformer.h	/^        int GetNbMaxSamples() const;$/;"	p	class:SoundTransformer	access:public	signature:() const
+GetNbMaxSamples	SoundTransformer.h	/^inline int SoundTransformer::GetNbMaxSamples() const$/;"	f	class:SoundTransformer	signature:() const
+GetTransformedData	SoundTransformer.h	/^        double *GetTransformedData();$/;"	p	class:SoundTransformer	access:public	signature:()
+GetTransformedData	SoundTransformer.h	/^inline double* SoundTransformer::GetTransformedData()$/;"	f	class:SoundTransformer	signature:()
+GetWaveInSampleRate	SoundTransformer.h	/^        int GetWaveInSampleRate() const;$/;"	p	class:SoundTransformer	access:public	signature:() const
+GetWaveInSampleRate	SoundTransformer.h	/^inline int SoundTransformer::GetWaveInSampleRate() const$/;"	f	class:SoundTransformer	signature:() const
+InitAssemblies	SampleProducer.cpp	/^int SampleProducer::InitAssemblies()$/;"	f	class:SampleProducer	signature:()
+InitAssemblies	SampleProducer.h	/^        int InitAssemblies();$/;"	p	class:SampleProducer	access:private	signature:()
+Instance	SampleProducer.cpp	/^SampleProducer& SampleProducer::Instance(SoundTransformer &transformer)$/;"	f	class:SampleProducer	signature:(SoundTransformer &transformer)
+Instance	SampleProducer.h	/^        static SampleProducer& Instance(SoundTransformer &transformer);$/;"	p	class:SampleProducer	access:public	signature:(SoundTransformer &transformer)
+Instance	SoundTransformer.cpp	/^SoundTransformer& SoundTransformer::Instance()$/;"	f	class:SoundTransformer	signature:()
+Instance	SoundTransformer.h	/^        static SoundTransformer& Instance();$/;"	p	class:SoundTransformer	access:public	signature:()
+LFLAGS	Makefile	/^LFLAGS=$/;"	m
+MAX_SAMPLES	SoundTransformer.cpp	5;"	d	file:
+OnTimer	FrequencyDisplay.cpp	/^gboolean FrequencyDisplay::OnTimer(TimerData *data)$/;"	f	class:FrequencyDisplay	signature:(TimerData *data)
+OnTimer	FrequencyDisplay.h	/^        static gboolean OnTimer(TimerData *data);$/;"	p	class:FrequencyDisplay	access:private	signature:(TimerData *data)
+PI	SoundTransformer.cpp	7;"	d	file:
+SAMPLE_RATE	SoundTransformer.cpp	6;"	d	file:
+SampleProducer	SampleProducer.cpp	/^SampleProducer::SampleProducer(SoundTransformer &transformer):m_Transformer(&transformer)$/;"	f	class:SampleProducer	signature:(SoundTransformer &transformer)
+SampleProducer	SampleProducer.h	/^        SampleProducer(SoundTransformer &transformer);$/;"	p	class:SampleProducer	access:private	signature:(SoundTransformer &transformer)
+SampleProducer	SampleProducer.h	/^class SampleProducer$/;"	c
+SampleProducer::Assemble	SampleProducer.cpp	/^int SampleProducer::Assemble()$/;"	f	class:SampleProducer	signature:()
+SampleProducer::Assemble	SampleProducer.h	/^        int Assemble();$/;"	p	class:SampleProducer	access:private	signature:()
+SampleProducer::DataArrives	SampleProducer.cpp	/^gboolean SampleProducer::DataArrives(GstPad *pad, GstBuffer *buffer, gpointer data)$/;"	f	class:SampleProducer	signature:(GstPad *pad, GstBuffer *buffer, gpointer data)
+SampleProducer::DataArrives	SampleProducer.h	/^        static gboolean DataArrives(GstPad *pad, GstBuffer *buffer, $/;"	p	class:SampleProducer	access:private	signature:(GstPad *pad, GstBuffer *buffer, gpointer data)
+SampleProducer::InitAssemblies	SampleProducer.cpp	/^int SampleProducer::InitAssemblies()$/;"	f	class:SampleProducer	signature:()
+SampleProducer::InitAssemblies	SampleProducer.h	/^        int InitAssemblies();$/;"	p	class:SampleProducer	access:private	signature:()
+SampleProducer::Instance	SampleProducer.cpp	/^SampleProducer& SampleProducer::Instance(SoundTransformer &transformer)$/;"	f	class:SampleProducer	signature:(SoundTransformer &transformer)
+SampleProducer::Instance	SampleProducer.h	/^        static SampleProducer& Instance(SoundTransformer &transformer);$/;"	p	class:SampleProducer	access:public	signature:(SoundTransformer &transformer)
+SampleProducer::SampleProducer	SampleProducer.cpp	/^SampleProducer::SampleProducer(SoundTransformer &transformer):m_Transformer(&transformer)$/;"	f	class:SampleProducer	signature:(SoundTransformer &transformer)
+SampleProducer::SampleProducer	SampleProducer.h	/^        SampleProducer(SoundTransformer &transformer);$/;"	p	class:SampleProducer	access:private	signature:(SoundTransformer &transformer)
+SampleProducer::Start	SampleProducer.cpp	/^int SampleProducer::Start()$/;"	f	class:SampleProducer	signature:()
+SampleProducer::Start	SampleProducer.h	/^        int Start();$/;"	p	class:SampleProducer	access:public	signature:()
+SampleProducer::Stop	SampleProducer.cpp	/^int SampleProducer::Stop()$/;"	f	class:SampleProducer	signature:()
+SampleProducer::Stop	SampleProducer.h	/^        int Stop();$/;"	p	class:SampleProducer	access:public	signature:()
+SampleProducer::m_AudioSrc	SampleProducer.h	/^        GstElement *m_AudioSrc;$/;"	m	class:SampleProducer	access:private
+SampleProducer::m_Filter	SampleProducer.h	/^        GstElement *m_Filter;$/;"	m	class:SampleProducer	access:private
+SampleProducer::m_Pipeline	SampleProducer.h	/^        GstElement *m_Pipeline; $/;"	m	class:SampleProducer	access:private
+SampleProducer::m_Transformer	SampleProducer.h	/^        SoundTransformer *m_Transformer;$/;"	m	class:SampleProducer	access:private
+SampleProducer::~SampleProducer	SampleProducer.cpp	/^SampleProducer::~SampleProducer()$/;"	f	class:SampleProducer	signature:()
+SampleProducer::~SampleProducer	SampleProducer.h	/^        virtual ~SampleProducer();$/;"	p	class:SampleProducer	access:private	signature:()
+Show	FrequencyDisplay.cpp	/^void FrequencyDisplay::Show()$/;"	f	class:FrequencyDisplay	signature:()
+Show	FrequencyDisplay.h	/^        void Show();$/;"	p	class:FrequencyDisplay	access:public	signature:()
+SoundTransformer	SoundTransformer.cpp	/^SoundTransformer::SoundTransformer()$/;"	f	class:SoundTransformer	signature:()
+SoundTransformer	SoundTransformer.h	/^        SoundTransformer();$/;"	p	class:SoundTransformer	access:private	signature:()
+SoundTransformer	SoundTransformer.h	/^class SoundTransformer$/;"	c
+SoundTransformer::ComputeSamples	SoundTransformer.cpp	/^int SoundTransformer::ComputeSamples(short *soundData)$/;"	f	class:SoundTransformer	signature:(short *soundData)
+SoundTransformer::ComputeSamples	SoundTransformer.h	/^        int ComputeSamples(short *soundData); $/;"	p	class:SoundTransformer	access:public	signature:(short *soundData)
+SoundTransformer::FFT	SoundTransformer.cpp	/^int SoundTransformer::FFT(double *fr,int n,int flag)$/;"	f	class:SoundTransformer	signature:(double *fr,int n,int flag)
+SoundTransformer::FFT	SoundTransformer.h	/^        int FFT(double *fr,int n,int flag);$/;"	p	class:SoundTransformer	access:private	signature:(double *fr,int n,int flag)
+SoundTransformer::GetAverageFrequency	SoundTransformer.h	/^        double *GetAverageFrequency();$/;"	p	class:SoundTransformer	access:public	signature:()
+SoundTransformer::GetAverageFrequency	SoundTransformer.h	/^inline double *SoundTransformer::GetAverageFrequency()$/;"	f	class:SoundTransformer	signature:()
+SoundTransformer::GetNbMaxSamples	SoundTransformer.h	/^        int GetNbMaxSamples() const;$/;"	p	class:SoundTransformer	access:public	signature:() const
+SoundTransformer::GetNbMaxSamples	SoundTransformer.h	/^inline int SoundTransformer::GetNbMaxSamples() const$/;"	f	class:SoundTransformer	signature:() const
+SoundTransformer::GetTransformedData	SoundTransformer.h	/^        double *GetTransformedData();$/;"	p	class:SoundTransformer	access:public	signature:()
+SoundTransformer::GetTransformedData	SoundTransformer.h	/^inline double* SoundTransformer::GetTransformedData()$/;"	f	class:SoundTransformer	signature:()
+SoundTransformer::GetWaveInSampleRate	SoundTransformer.h	/^        int GetWaveInSampleRate() const;$/;"	p	class:SoundTransformer	access:public	signature:() const
+SoundTransformer::GetWaveInSampleRate	SoundTransformer.h	/^inline int SoundTransformer::GetWaveInSampleRate() const$/;"	f	class:SoundTransformer	signature:() const
+SoundTransformer::Instance	SoundTransformer.cpp	/^SoundTransformer& SoundTransformer::Instance()$/;"	f	class:SoundTransformer	signature:()
+SoundTransformer::Instance	SoundTransformer.h	/^        static SoundTransformer& Instance();$/;"	p	class:SoundTransformer	access:public	signature:()
+SoundTransformer::SoundTransformer	SoundTransformer.cpp	/^SoundTransformer::SoundTransformer()$/;"	f	class:SoundTransformer	signature:()
+SoundTransformer::SoundTransformer	SoundTransformer.h	/^        SoundTransformer();$/;"	p	class:SoundTransformer	access:private	signature:()
+SoundTransformer::m_Am	SoundTransformer.h	/^	double *m_Am;$/;"	m	class:SoundTransformer	access:private
+SoundTransformer::m_Amave	SoundTransformer.h	/^	double *m_Amave;$/;"	m	class:SoundTransformer	access:private
+SoundTransformer::m_Aver	SoundTransformer.h	/^	double *m_Aver;$/;"	m	class:SoundTransformer	access:private
+SoundTransformer::m_Fi	SoundTransformer.h	/^	double *m_Fi;$/;"	m	class:SoundTransformer	access:private
+SoundTransformer::m_Fr	SoundTransformer.h	/^        double *m_Fr;$/;"	m	class:SoundTransformer	access:private
+SoundTransformer::m_NbMaxSamples	SoundTransformer.h	/^        int m_NbMaxSamples;$/;"	m	class:SoundTransformer	access:private
+SoundTransformer::m_Pm	SoundTransformer.h	/^	double *m_Pm;$/;"	m	class:SoundTransformer	access:private
+SoundTransformer::m_Tm1	SoundTransformer.h	/^	double *m_Tm1;$/;"	m	class:SoundTransformer	access:private
+SoundTransformer::m_Tm2	SoundTransformer.h	/^	double *m_Tm2;$/;"	m	class:SoundTransformer	access:private
+SoundTransformer::m_WaveInSampleRate	SoundTransformer.h	/^        int m_WaveInSampleRate;$/;"	m	class:SoundTransformer	access:private
+SoundTransformer::~SoundTransformer	SoundTransformer.cpp	/^SoundTransformer::~SoundTransformer()$/;"	f	class:SoundTransformer	signature:()
+SoundTransformer::~SoundTransformer	SoundTransformer.h	/^        ~SoundTransformer();$/;"	p	class:SoundTransformer	access:private	signature:()
+Start	SampleProducer.cpp	/^int SampleProducer::Start()$/;"	f	class:SampleProducer	signature:()
+Start	SampleProducer.h	/^        int Start();$/;"	p	class:SampleProducer	access:public	signature:()
+Stop	SampleProducer.cpp	/^int SampleProducer::Stop()$/;"	f	class:SampleProducer	signature:()
+Stop	SampleProducer.h	/^        int Stop();$/;"	p	class:SampleProducer	access:public	signature:()
+TimerData	FrequencyDisplay.h	/^}TimerData;$/;"	t	typeref:struct:_TimerData
+_TimerData	FrequencyDisplay.h	/^typedef struct _TimerData$/;"	s
+_TimerData::transformer	FrequencyDisplay.h	/^        SoundTransformer *transformer;$/;"	m	struct:_TimerData	access:public
+_TimerData::window	FrequencyDisplay.h	/^        GtkWidget *window;$/;"	m	struct:_TimerData	access:public
+__FREQUENCY_DISPLAY_H_	FrequencyDisplay.h	2;"	d
+__SAMPLE_PRODUCER_H_	SampleProducer.h	2;"	d
+__SOUND_TRANSFORMER_H_	SoundTransformer.h	2;"	d
+cc	Makefile	/^cc=gcc$/;"	m
+cpp	Makefile	/^cpp=g++$/;"	m
+dir_src_file	Makefile	/^dir_src_file=$(shell find .\/ \\( \\( $(exclude_path_str) $(exclude_name_str) \\) -prune -o \\( $(include_suffix_str) \\) -type f -print \\) )$/;"	m
+exclude_name	Makefile	/^exclude_name=doc $/;"	m
+exclude_name_str	Makefile	/^exclude_name_str=$(wordlist 1,$(shell expr $(words $(exclude_name_str_)) - 1),$(exclude_name_str_))$/;"	m
+exclude_name_str_	Makefile	/^exclude_name_str_=$(foreach str,$(exclude_name), -name $(str) -o )$/;"	m
+exclude_path	Makefile	/^exclude_path=$/;"	m
+exclude_path_str	Makefile	/^exclude_path_str=$(foreach str,$(exclude_path), -path $(str) -o )$/;"	m
+include_suffix	Makefile	/^include_suffix="*.c" "*.cpp"$/;"	m
+include_suffix_str	Makefile	/^include_suffix_str=$(wordlist 1,$(shell expr $(words $(include_suffix_str_)) - 1),$(include_suffix_str_))$/;"	m
+include_suffix_str_	Makefile	/^include_suffix_str_=$(foreach str,$(include_suffix), -name $(str) -o )$/;"	m
+ld	Makefile	/^ld=g++$/;"	m
+libs	Makefile	/^libs= `pkg-config --libs $(required_library)`$/;"	m
+m_Am	SoundTransformer.h	/^	double *m_Am;$/;"	m	class:SoundTransformer	access:private
+m_Amave	SoundTransformer.h	/^	double *m_Amave;$/;"	m	class:SoundTransformer	access:private
+m_AudioSrc	SampleProducer.h	/^        GstElement *m_AudioSrc;$/;"	m	class:SampleProducer	access:private
+m_Aver	SoundTransformer.h	/^	double *m_Aver;$/;"	m	class:SoundTransformer	access:private
+m_Data	FrequencyDisplay.h	/^        TimerData m_Data;$/;"	m	class:FrequencyDisplay	access:private
+m_Fi	SoundTransformer.h	/^	double *m_Fi;$/;"	m	class:SoundTransformer	access:private
+m_Filter	SampleProducer.h	/^        GstElement *m_Filter;$/;"	m	class:SampleProducer	access:private
+m_Fr	SoundTransformer.h	/^        double *m_Fr;$/;"	m	class:SoundTransformer	access:private
+m_NbMaxSamples	SoundTransformer.h	/^        int m_NbMaxSamples;$/;"	m	class:SoundTransformer	access:private
+m_Pipeline	SampleProducer.h	/^        GstElement *m_Pipeline; $/;"	m	class:SampleProducer	access:private
+m_Pm	SoundTransformer.h	/^	double *m_Pm;$/;"	m	class:SoundTransformer	access:private
+m_Tm1	SoundTransformer.h	/^	double *m_Tm1;$/;"	m	class:SoundTransformer	access:private
+m_Tm2	SoundTransformer.h	/^	double *m_Tm2;$/;"	m	class:SoundTransformer	access:private
+m_Transformer	SampleProducer.h	/^        SoundTransformer *m_Transformer;$/;"	m	class:SampleProducer	access:private
+m_WaveInSampleRate	SoundTransformer.h	/^        int m_WaveInSampleRate;$/;"	m	class:SoundTransformer	access:private
+main	Frequency.cpp	/^int main(int argc, char *argv[])$/;"	f	signature:(int argc, char *argv[])
+obj_dir	Makefile	/^obj_dir=$(proj_dir)obj\/$/;"	m
+obj_file	Makefile	/^obj_file=$(patsubst %, $(obj_dir)%o, $(src_file))$/;"	m
+proj_dir	Makefile	/^proj_dir=.\/$/;"	m
+required_library	Makefile	/^required_library=gstreamer-0.10 gtk+-2.0$/;"	m
+src_dir	Makefile	/^src_dir=.\/$/;"	m
+src_file	Makefile	/^src_file=$(foreach obj,$(dir_src_file),$(subst .\/,, $(obj)))$/;"	m
+target	Makefile	/^target=Frequency$/;"	m
+target_main_src_suffix	Makefile	/^target_main_src_suffix=.cpp$/;"	m
+transformer	FrequencyDisplay.h	/^        SoundTransformer *transformer;$/;"	m	struct:_TimerData	access:public
+window	FrequencyDisplay.h	/^        GtkWidget *window;$/;"	m	struct:_TimerData	access:public
+~FrequencyDisplay	FrequencyDisplay.cpp	/^FrequencyDisplay::~FrequencyDisplay()$/;"	f	class:FrequencyDisplay	signature:()
+~FrequencyDisplay	FrequencyDisplay.h	/^        virtual ~FrequencyDisplay();$/;"	p	class:FrequencyDisplay	access:public	signature:()
+~SampleProducer	SampleProducer.cpp	/^SampleProducer::~SampleProducer()$/;"	f	class:SampleProducer	signature:()
+~SampleProducer	SampleProducer.h	/^        virtual ~SampleProducer();$/;"	p	class:SampleProducer	access:private	signature:()
+~SoundTransformer	SoundTransformer.cpp	/^SoundTransformer::~SoundTransformer()$/;"	f	class:SoundTransformer	signature:()
+~SoundTransformer	SoundTransformer.h	/^        ~SoundTransformer();$/;"	p	class:SoundTransformer	access:private	signature:()
