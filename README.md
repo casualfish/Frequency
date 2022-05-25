@@ -8,4 +8,6 @@ SampleProducer负责对声音进行采集的模块，采集到的数据交给Sou
 FrequencyDisplay使用了gdk的2d矢量绘图库cairo(http://cairographics.org/)进行绘图。
 在实现中为auidosrc注册了一个回调函数，每当有新的数据生成就调用transformer的进行转换，
 同时在FrequencyDisplay中注册了一个定时器，每隔一定时间进行重新绘图，动态显示声音的变化。
+
+
 ![image](https://user-images.githubusercontent.com/1918039/170303774-8eb68da1-622b-4e90-80d2-ad2f97dbf726.png)
