@@ -9,6 +9,8 @@ typedef struct _TimerData
 {
         GtkWidget *window;
         SoundTransformer *transformer;
+        cairo_region_t *cairoRegion;
+        cairo_t *cr;
 }TimerData;
 
 class FrequencyDisplay

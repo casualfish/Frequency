@@ -3,7 +3,7 @@ obj_dir=$(proj_dir)obj/
 src_dir=./
 
 #add required library here.
-required_library=gstreamer-0.10 gtk+-2.0
+required_library=gstreamer-1.0 gtk+-3.0
 
 #exclude files or dirs by path."" is needed when using a regular expression
 exclude_path=

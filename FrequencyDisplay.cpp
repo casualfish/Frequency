@@ -6,7 +6,7 @@ gboolean FrequencyDisplay::OnTimer(TimerData *data)
         GtkWidget *widget = data->window;
         SoundTransformer *transformer = data->transformer;
 
-        if (widget->window == NULL) {
+        if (gtk_widget_get_window(widget) == NULL) {
                 return FALSE;
         }
 
@@ -17,10 +17,10 @@ gboolean FrequencyDisplay::OnTimer(TimerData *data)
 	int x,y;
 
         cairo_t *cr;
-        cr = gdk_cairo_create(widget->window);
+        cr = gdk_cairo_create(gtk_widget_get_window(widget));
         
-        int width = gdk_window_get_width(widget->window);
-        int height = gdk_window_get_height(widget->window);
+        int width = gdk_window_get_width(gtk_widget_get_window(widget));
+        int height = gdk_window_get_height(gtk_widget_get_window(widget));
 
         cairo_rectangle(cr, 0, 0, width, height);
         cairo_stroke_preserve(cr);

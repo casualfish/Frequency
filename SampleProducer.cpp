@@ -2,10 +2,13 @@
 
 gboolean SampleProducer::DataArrives(GstPad *pad, GstBuffer *buffer, gpointer data)
 {
+	GstMapInfo map;
         SoundTransformer *transformer = (SoundTransformer*)data;
-        unsigned char *samplePtr = GST_BUFFER_DATA(buffer);
-        //对数据进行处理
-        transformer->ComputeSamples((short*)samplePtr);
+	if (gst_buffer_map(buffer, &map, GST_MAP_READ)) {
+                //对数据进行处理
+                transformer->ComputeSamples((short*)map.data);
+		gst_buffer_map(buffer, &map, GST_MAP_READ);
+	}
 
         return FALSE;
 }
@@ -60,7 +63,7 @@ int SampleProducer::Assemble()
 
         gst_bin_add_many(GST_BIN(m_Pipeline), m_AudioSrc, m_Filter, NULL);
         gst_element_link_many(m_AudioSrc, m_Filter, NULL);
-        filterCaps = gst_caps_new_simple("audio/x-raw-int", 
+        filterCaps = gst_caps_new_simple("audio/x-raw", 
                                 "endianness", G_TYPE_INT, 1234, 
                                 "signed", G_TYPE_BOOLEAN, true, 
                                 "width", G_TYPE_INT, 16, 
@@ -71,8 +74,8 @@ int SampleProducer::Assemble()
         g_object_set(G_OBJECT(m_Filter), "caps", filterCaps, NULL);
         gst_caps_unref(filterCaps);
         
-        pad = gst_element_get_pad(m_AudioSrc, "src");
-        gst_pad_add_buffer_probe(pad, G_CALLBACK(DataArrives), (gpointer)(m_Transformer));
+        pad = gst_element_get_static_pad(m_AudioSrc, "src");
+        gst_pad_add_probe(pad, GST_PAD_PROBE_TYPE_BUFFER, (GstPadProbeCallback)DataArrives, (gpointer)(m_Transformer), NULL);
         gst_object_unref(pad);
 
         return 0;
