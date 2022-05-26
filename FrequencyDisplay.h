@@ -9,8 +9,6 @@ typedef struct _TimerData
 {
         GtkWidget *window;
         SoundTransformer *transformer;
-        cairo_region_t *cairoRegion;
-        cairo_t *cr;
 }TimerData;
 
 class FrequencyDisplay
@@ -20,6 +18,7 @@ public:
         virtual ~FrequencyDisplay();
         void Show();
 private:
+        static gboolean OnDraw(GtkWidget *widget, GdkEventExpose *event, TimerData *data);
         static gboolean OnTimer(TimerData *data);
 private:
         TimerData m_Data;
